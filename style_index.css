@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'Roboto Mono', monospace;
+    src: url();
+}
+body{
+    background: rgb(1,189,60);
+    background: linear-gradient(90deg, rgba(1,189,60,0.8550770650056898) 0%, rgba(171,235,180,1) 13%, rgba(228,161,236,1) 30%, rgba(226,217,225,1) 58%, rgba(151,229,245,1) 100%);
+}
+
+main {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1216;
+    padding-bottom: 80px;
+}
+header {
+    background-color: black;
+    position:fixed;
+    width: 100%;
+
+}
+
+.headermobile {
+    display:none;
+}
+
+#logo{
+    width: 150px;
+}
+
+header section {
+    width: 90%;
+    max-width: 1290px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+nav a:hover{
+    color: greenyellow;
+}
+
+
+
+
+h1{
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 129.5%;
+    color: #000000;
+}
+
+h2{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+
+}
+
+h3 {
+    font-family: 'Solway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    color: #000000;
+}
+
+
+p{
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+}
+
+.abovefold {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 160px 5% 200px 5%;
+}
+
+#uxui {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.ultimosproyectos {
+    padding-bottom: 24px;
+    padding-left: 5%;
+}
+
+h4 {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.linkproyecto {
+    color: rgb(66, 65, 65);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+
+.tituloproyecto {
+    display:flex;
+    flex-direction:column;
+    gap: 12px;
+}
+
+.cardcontent a:hover{
+    color: black;
+    font-size: 16px;
+    text-decoration:underline;
+}
+
+.containercard .card:hover {
+    border-radius: 0px;
+    border: 1px solid #ff00c8; 
+    box-shadow: 12px 12px 12px 1px rgba(113, 112, 112, 0.445);
+}
+.containercard {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 32px; 
+    justify-content: center;
+}
+
+.imagencard {
+    width: 60%;
+    align-self: center;
+}
+
+.card {
+    display:flex;
+    width: 33%;
+    max-width: 443px;
+    /*background: rgba(255, 255, 255, 0.2);*/
+    border-radius: 25px;
+    border: 1px solid #000000; 
+    
+}
+
+
+.cardcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    gap: 24px;
+     
+}
+
+
+footer {
+    width: 100%;
+    background-color: black;
+    
+}
+
+.footercontainer {
+    width: 90%;
+    max-width: 1290px;
+    margin: 0 auto;
+    height: 80px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rrss {
+    display: flex; 
+    justify-content: center;
+    gap:24px; 
+}
+
+.icono {
+    width: 32px;
+}
+
+@media (max-width: 443px) {
+    h1{
+        font-family: 'Solway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 100%;
+        color: #000000;
+    }
+    
+    h2{
+        font-family: 'Roboto Mono';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 32px;
+        color: #000000;
+    
+    }
+    
+    h3 {
+        font-family: 'Solway';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 24px;
+        color: #000000;
+    }
+    
+    
+    p{
+        color: black;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+    }
+
+    h4 {
+        color: black;
+        font-family: 'Roboto Mono', monospace;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    main {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .abovefold {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        padding: 100px 2% 60px 2%;
+        gap: 12px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .headermobile{
+        display:flex;
+        justify-items: center;
+        background-color: #000000;
+        width: 100%;
+        height: 80px;
+    }  
+
+    #sectionheadermobile {
+        margin: 0 auto;
+        display: flex; 
+        justify-content: space-between;
+    }
+    
+    nav {
+        display: flex;
+        gap: 18px;
+    }
+
+    #logo{
+        width: 100px;
+    }
+
+    .icono {
+        width: 20px;
+    }
+
+    .containercard {
+        width: 95%;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 24px; 
+        justify-content: center;
+    }
+    
+    .cardcontent {
+        width: 95%;    
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        gap: 18px;
+        Padding: 18px; /* min-width: 343px;*/
+        }
+
+    .card {
+        width: 95%;
+        min-width: none;
+        max-width: fit-content;
+        border-radius: 25px;
+        border: 1px solid #000000;
+
+    }
+
+    .imagencard {
+        width: 50%;
+        align-self: center;
+    }
+
+
+    
+
+    
+   
+    
+
+}
